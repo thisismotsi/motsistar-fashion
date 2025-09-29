@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base body styles */
+body {
+  @apply font-body bg-ivory text-charcoal text-base leading-relaxed transition-colors duration-300;
+}
+
+/* Dark mode overrides */
+.dark body {
+  @apply bg-primary text-secondary;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-heading font-semibold leading-tight text-primary dark:text-accent;
+}
+
+/* Paragraphs */
+p {
+  @apply mb-4 font-normal text-charcoal dark:text-secondary;
+}
+
+/* Links */
+a {
+  @apply text-highlight hover:text-primary transition-colors duration-300;
+}
+
+.dark a {
+  @apply text-secondary hover:text-accent;
+}
+
+/* Buttons */
+.btn {
+  @apply inline-flex items-center justify-center rounded-2xl px-5 py-3 font-medium shadow-glow transition-colors;
+}
+
+.btn-primary {
+  @apply bg-primary text-secondary hover:bg-opacity-90 dark:bg-primary dark:text-secondary;
+}
+
+.btn-secondary {
+  @apply bg-highlight text-secondary border border-secondary hover:bg-secondary hover:text-highlight dark:bg-accent dark:text-charcoal dark:border-accent hover:dark:bg-highlight hover:dark:text-secondary;
+}
+
+/* Cards */
+.card {
+  @apply bg-secondary p-6 rounded-2xl shadow-glow transition-transform hover:-translate-y-1 hover:shadow-xl;
+}
+
+.dark .card {
+  @apply bg-charcoal text-secondary shadow-darkGlow;
+}
