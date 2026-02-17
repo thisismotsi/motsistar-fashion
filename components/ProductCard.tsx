@@ -89,7 +89,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
           size="lg"
           className="rounded-xl px-6 py-3 shadow-md hover:shadow-lg w-full md:w-auto"
         >
-          View Product on Amazon
+          View Products on Amazon
         </Button>
       </div>
     </motion.div>

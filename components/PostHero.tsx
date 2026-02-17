@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { Button } from "./Button";
 
 interface PostHeroProps {
   title: string;
@@ -9,9 +10,10 @@ interface PostHeroProps {
   category: string;
   imageSrc: string;
   excerpt?: string;
+  affiliateLink?: string;
 }
 
-const PostHero: React.FC<PostHeroProps> = ({ title, date, category, imageSrc, excerpt }) => {
+const PostHero: React.FC<PostHeroProps> = ({ title, date, category, imageSrc, excerpt, affiliateLink }) => {
   return (
     <section className="relative w-full h-80 sm:h-96 lg:h-[28rem] flex items-center justify-center text-center overflow-hidden">
       
@@ -75,6 +77,14 @@ const PostHero: React.FC<PostHeroProps> = ({ title, date, category, imageSrc, ex
         >
           {date}
         </motion.span>
+        <Button
+          href={affiliateLink}
+          variant="default"
+          size="lg"
+          className="rounded-xl px-6 py-3 shadow-md hover:shadow-lg w-full md:w-auto"
+        >
+          View Products on Amazon
+        </Button>
       </motion.div>
     </section>
   );

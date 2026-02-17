@@ -9,6 +9,7 @@ import React from "react";
 import Head from "next/head";
 import SerpApi from "google-search-results-nodejs";
 import { Post } from "../../../types/post";
+import { Button } from "@/components/Button";
 
 interface BlogPageProps {
   params: Promise<{ slug: string }>;
@@ -218,6 +219,7 @@ export default async function BlogPage({ params }: BlogPageProps) {
         category={post.category}
         imageSrc={post.imageSrc}
         excerpt={post.excerpt}
+        affiliateLink={post.products[0]?.affiliateLink}
       />
 
       <PostContentLayout tableOfContents={tableOfContents} disclosure={post.disclosure}>
@@ -276,6 +278,16 @@ export default async function BlogPage({ params }: BlogPageProps) {
             </div>
           </section>
         )}
+          <div className="flex justify-center">
+        <Button
+          href={post.products[0]?.affiliateLink}
+          variant="default"
+          size="lg"
+          className="rounded-xl px-6 py-3 shadow-md hover:shadow-lg w-full md:w-auto"
+        >
+          View Products on Amazon
+        </Button>
+      </div>
       </PostContentLayout>
 
       <BlogSection categories={["All"]} samplePosts={allPosts.slice(0, 3)} />
