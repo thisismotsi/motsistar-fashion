@@ -2,10 +2,10 @@ import { Post } from "../../../types/post";
 
 export const puma: Post = {
   slug: "puma-products",
-  title: "Shop Puma products from trusted Amazon listings",
+  title: "Shop Puma products from the official Puma Amazon storefront",
   date: "Feb 17, 2026",
   excerpt:
-    "Looking for authentic Puma sneakers, sportswear, and accessories? Learn how to shop genuine Puma products from trusted Amazon listings with confidence and competitive pricing.",
+    "Looking for authentic Puma sneakers, sportswear, and accessories? Learn how to shop genuine Puma products from the official Puma Amazon storefront with confidence and competitive pricing.",
   category: "Fashion",
   imageSrc: "/images/hero/puma-logo.png",
 

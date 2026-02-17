@@ -2,10 +2,10 @@ import { Post } from "../../../types/post";
 
 export const adidas: Post = {
   slug: "adidas-products",
-  title: "Shop Adidas products from trusted Amazon listings",
+  title: "Shop Adidas products from the official Adidas Amazon storefront",
   date: "Feb 17, 2026",
   excerpt:
-    "Looking for authentic Adidas sneakers, sportswear, and accessories? Discover how to shop genuine Adidas products from trusted Amazon listings with confidence and competitive pricing.",
+    "Looking for authentic Adidas sneakers, sportswear, and accessories? Discover how to shop genuine Adidas products from the official Amazon storefront with confidence and competitive pricing.",
   category: "Fashion",
   imageSrc: "/images/hero/adidas-logo.png",
 

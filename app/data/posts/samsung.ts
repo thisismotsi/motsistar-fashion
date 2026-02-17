@@ -2,10 +2,10 @@ import { Post } from "../../../types/post";
 
 export const samsung: Post = {
   slug: "samsung-products",
-  title: "Buy Samsung products from trusted sellers on Amazon",
+  title: "Buy Samsung products from the official Samsung Amazon storefront",
   date: "Feb 17, 2026",
   excerpt:
-    "Looking for genuine Samsung devices at competitive prices? Discover how to shop authentic Samsung smartphones, TVs, and accessories from trusted Amazon listings with confidence.",
+    "Looking for genuine Samsung devices at competitive prices? Discover how to shop authentic Samsung smartphones, TVs, and accessories from the official Samsung Amazon storefront with confidence.",
   category: "Technology",
   imageSrc: "/images/hero/samsung-logo.png",
 
