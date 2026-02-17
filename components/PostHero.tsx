@@ -36,7 +36,7 @@ const PostHero: React.FC<PostHeroProps> = ({ title, date, category, imageSrc, ex
 
       {/* Centered content */}
       <motion.div
-        className="relative z-10 max-w-3xl px-6 sm:px-12 text-ivory flex flex-col gap-4 items-center"
+        className="relative z-10 max-w-3xl px-6 py-12 sm:px-12 text-ivory flex flex-col gap-4 items-center"
         initial="hidden"
         animate="visible"
         variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.2 } } }}
