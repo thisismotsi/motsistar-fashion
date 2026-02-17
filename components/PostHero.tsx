@@ -83,7 +83,7 @@ const PostHero: React.FC<PostHeroProps> = ({ title, date, category, imageSrc, ex
           href={affiliateLink}
           variant="default"
           size="lg"
-          className="rounded-xl px-6 py-3 shadow-md hover:shadow-lg w-full md:w-auto mb-8 md:mb-0"
+          className="rounded-xl px-6 py-3 shadow-md hover:shadow-lg w-full md:w-auto mb-16 md:mb-0"
           >
           View Products on Amazon
         </Button>
